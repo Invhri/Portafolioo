@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0f172a;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.cabezera {
+    background-color: #1e293b;
+    padding: 1rem 2rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.2);
+}
+
+.navegacion {
+    display: flex;
+    justify-content: center;
+}
+
+.lista-nav {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+.nav-btn {
+    background: transparent;
+    border: none;
+    color: #94a3b8;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    cursor: default;
+    transition: all 0.2s ease;
+}
+
+.nav-btn:hover {
+    color: #38bdf8;
+    background-color: rgba(56, 189, 248, 0.1);
+}
+
+.contenedor {
+    flex: 1;
+    max-width: 800px;
+    width: 100%;
+    margin: 2rem auto;
+    padding: 0 1.5rem;
+}
+
+
+.sobre-mi {
+    background-color: #1e293b;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.2);
+}
+
+.sobre-mi h2 {
+    color: #38bdf8;
+    margin-bottom: 1rem;
+    font-size: 1.75rem;
+}
+
+.sobre-mi p {
+    line-height: 1.6;
+    color: #cbd5e1;
+    font-size: 1.05rem;
+}
+
+/* Estilos de Footer */
+.pie-pagina {
+    background-color: #1e293b;
+    margin-top: 4rem;
+    padding: 2.5rem 1.5rem 1.5rem 1.5rem;
+    border-top: 1px solid #334155;
+}
+
+.contenido-footer {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.titulo-footer {
+    color: #38bdf8;
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 0.75rem;
+}
+
+.btn-contacto, .btn-red {
+    background: transparent;
+    border: none;
+    color: #cbd5e1;
+    font-size: 0.95rem;
+    cursor: default;
+    transition: color 0.2s ease;
+}
+
+.enlaces-redes {
+    display: flex;
+    gap: 1rem;
+}
+
+.btn-contacto:hover, .btn-red:hover {
+    color: #38bdf8;
+}
+
+.copyright {
+    text-align: center;
+    color: #64748b;
+    font-size: 0.85rem;
+    margin-top: 2.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Sección de Proyectos */
+.proyectos {
+    margin-top: 3rem;
+}
+
+.proyectos h2 {
+    color: #38bdf8;
+    margin-bottom: 1.5rem;
+    font-size: 1.75rem;
+}
+
+/* Grid para organizar las tarjetas */
+.grid-proyectos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+/* Estilos de las Tarjetas */
+.tarjeta-proyecto {
+    background-color: #1e293b;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border: 1px solid #334155;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.tarjeta-proyecto:hover {
+    transform: translateY(-4px);
+    border-color: #38bdf8;
+}
+
+.tarjeta-proyecto h3 {
+    color: #f8fafc;
+    margin-bottom: 0.5rem;
+    font-size: 1.25rem;
+}
+
+.tarjeta-proyecto p {
+    color: #94a3b8;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+/* Etiquetas de tecnologías */
+.etiquetas {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.etiquetas span {
+    background-color: rgba(56, 189, 248, 0.1);
+    color: #38bdf8;
+    font-size: 0.8rem;
+    padding: 0.25rem 0.6rem;
+    border-radius: 4px;
+    font-weight: 600;
+}
